@@ -1,3 +1,4 @@
+import { Prompt_600SemiBold } from "@expo-google-fonts/prompt";
 import { StyleSheet } from "react-native";
 
 
@@ -8,11 +9,55 @@ const css = StyleSheet.create({
     height: '135px',
   },
 
+  logoPrincipal: {
+  width: 60,
+  height: 60,
+  borderRadius: 30,
+  shadowColor: '#75C9EE',
+  shadowRadius: 5,
+  textShadowOffset: { height: 10},
+  shadowOpacity: 0.5,
+  borderWidth: 3,
+  borderColor: "#75C9EE"
+  },
+
+  nomeUsuario: {
+    fontSize: 17,
+  //  fontFamily: 'Tahoma',
+    color: '#75C9EE',
+    //fontWeight: 600,
+    paddingStart: 17,
+    paddingTop: 5,
+  },
+
+  notificacao: {
+paddingStart: 150,
+paddingTop: 5,
+  },
+
   background: {
     flex: 1,
     alignItems: 'center',
     justifyContent: 'center',
     backgroundColor: '#75C9EE',
+  },
+
+  backgroundPrincipal: {
+    height: '100%',
+    backgroundColor: '#f5fcff',
+    width: '100%',
+  },
+  
+  headerPrincipal: {
+  height: '15%',
+  flexDirection: "row",
+  paddingHorizontal: 15,
+  paddingVertical: 20,
+  },
+
+  conteudoPrincipal: {
+    flex: 5,
+    backgroundColor: 'green',
   },
 
   containerLogo: {
@@ -85,9 +130,9 @@ fontWeight: 'bold',
 
   textTitle: {
     fontSize: 23,
-    fontFamily: 'Tahoma',
+ //   fontFamily: 'Tahoma',
     color: '#FFF',
-    fontWeight: 700,
+   // fontWeight: 700,
   },
 
   optContainer: {
@@ -130,7 +175,34 @@ justifyContent: 'center',
 borderRadius: 9,
 marginTop: 10,
   },
-  
+
+  btnAddContainer: {
+    width: 60,
+    height: 60,
+    borderRadius: 30,
+    backgroundColor: '#3275C7',
+    alignItems: 'center',
+    justifyContent: 'center',
+    marginBottom: 35,
+    position: "absolute",
+    shadowColor: "#3275C7",
+    shadowRadius: 5,
+    shadowOpacity: 0.3,
+  },
+
+  graficocss: {
+    width: '90%',
+    marginStart: 17,
+    marginTop: 10,
+    marginBottom: 5,
+  },
+
+  tituloGrafico: {
+      fontSize: 17,
+      color: '#75C9EE',
+      paddingStart: 82,
+      paddingTop: 7,
+    },
 });
 
 export {css};

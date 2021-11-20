@@ -4,11 +4,10 @@ import Constants from 'expo-constants';
 import {css} from './assets/css/css';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import Login from './screens/Login/Login';
-import Cadastrar from './screens/Cadastro/Cadastrar';
-import Password from './screens/Login/Password';
-import FinalizarCadastro from './screens/Cadastro/FinalizarCadastro';
-import Home from './screens/Principal/Home';
+import Login from './screens/Login';
+import Cadastro from './screens/Cadastro';
+import Password from './screens/Password';
+import FinalizarCadastro from './screens/FinalizarCadastro';
 
 
 export default function App() {
@@ -19,10 +18,9 @@ export default function App() {
     <NavigationContainer>
       <Stack.Navigator>
       <Stack.Screen name="Login" component={Login} />
-        <Stack.Screen name="Cadastrar" component={Cadastrar} />
+        <Stack.Screen name="Cadastro" component={Cadastro} />
         <Stack.Screen name="FinalizarCadastro" component={FinalizarCadastro} />
         <Stack.Screen name="Password" component={Password} />
-        <Stack.Screen name="Home" component={Home} />
 
       </Stack.Navigator>
     </NavigationContainer>

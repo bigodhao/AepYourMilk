@@ -1,9 +1,9 @@
 import React, {useState, useEffect} from 'react';
 import { Text, View, KeyboardAvoidingView, Image, TextInput, TouchableOpacity, Animated } from 'react-native';
 import Constants from 'expo-constants';
-import {css} from '../assets/css/css';
+import {css} from '../../assets/css/css';
 
-export default function Login({navigation}) {
+export default function Password({navigation}) {
 
   const [offset] = useState(new Animated.ValueXY({x: 0, y: 95}));
   const [opacity] = useState(new Animated.Value(0));
@@ -26,7 +26,7 @@ export default function Login({navigation}) {
   return (
 <KeyboardAvoidingView style={css.background}>
   <View style={css.containerLogo}>
-  <Image style={css.logo1x} source={require('../assets/img/Logo1x.png')} />
+  <Image style={css.logo1x} source={require('../../assets/img/Logo1x.png')} />
   </View>
 
   <Animated.View style={[
@@ -53,14 +53,14 @@ export default function Login({navigation}) {
     />
 
     <TouchableOpacity style={css.btnSubmit}>
-      <Text style={css.submitText}>Acessar</Text>
+      <Text style={css.submitText}>TESTE</Text>
     </TouchableOpacity>
 
-    <TouchableOpacity style={css.btnRegister} onPress={() =>navigation.navigate('Cadastro')}>
+    <TouchableOpacity style={css.btnRegister} onPress={() =>navigation.navigate('Login')}>
       <Text style={css.registerText}>Criar conta gratuita</Text>
     </TouchableOpacity>
 
-    <TouchableOpacity style={css.btnForgotPass} onPress={() =>navigation.navigate('Password')}>
+    <TouchableOpacity style={css.btnForgotPass}>
       <Text style={css.registerText}>Esqueci minha senha</Text>
     </TouchableOpacity>
     </Animated.View>
